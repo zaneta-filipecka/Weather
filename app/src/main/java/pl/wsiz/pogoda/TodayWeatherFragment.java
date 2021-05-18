@@ -100,7 +100,7 @@ public class TodayWeatherFragment extends Fragment {
                         description.setText(new StringBuilder("Weather in ").append(weatherResult.getName()).toString());
                         temperature.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getTemp())).append("°C").toString());
                         date_time.setText(API_Pogoda.convertUnixToDate(weatherResult.getDt()));
-                        pressure.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getPressure())).append(" hpa").toString());
+                        pressure.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getPressure())).append(" hPa").toString());
                         humidity.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getHumidity())).append("%").toString());
                         sunrise.setText(API_Pogoda.convertUnixToHour(weatherResult.getSys().getSunrise()));
                         sunset.setText(API_Pogoda.convertUnixToHour(weatherResult.getSys().getSunset()));
@@ -116,5 +116,11 @@ public class TodayWeatherFragment extends Fragment {
                         Toast.makeText(getActivity(), ""+throwable.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }));
+    }
+
+    @Override
+    public void onStop() {
+        compositeDisposable.clear();
+        super.onStop();
     }
 }
