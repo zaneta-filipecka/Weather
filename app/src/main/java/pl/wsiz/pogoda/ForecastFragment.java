@@ -68,12 +68,6 @@ public class ForecastFragment extends Fragment {
         return itemView;
     }
 
-    @Override
-    public void onStop() {
-        compositeDisposable.clear();
-        super.onStop();
-    }
-
     private void getForecastWeatherInformation() {
         compositeDisposable.add(mService.getForecastWeatherForecastByLatLng(
                 String.valueOf(API_Pogoda.lokalizacja.getLatitude()),
@@ -102,5 +96,17 @@ public class ForecastFragment extends Fragment {
 
         WeatherForecastAdapter adapter = new WeatherForecastAdapter(getContext(),weatherForecastResult);
         recycler_forecast.setAdapter(adapter);
+    }
+
+    @Override
+    public void onDestroy() {
+        compositeDisposable.clear();
+        super.onDestroy();
+    }
+
+    @Override
+    public void onStop() {
+        compositeDisposable.clear();
+        super.onStop();
     }
 }
