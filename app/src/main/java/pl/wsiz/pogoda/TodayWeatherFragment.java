@@ -97,7 +97,7 @@ public class TodayWeatherFragment extends Fragment {
 
                         //Load information
                         city_name.setText(weatherResult.getName());
-                        description.setText(new StringBuilder("Weather in ").append(weatherResult.getName()).toString());
+                        description.setText(new StringBuilder("Pogoda w ").append(weatherResult.getName()).toString());
                         temperature.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getTemp())).append("°C").toString());
                         date_time.setText(API_Pogoda.convertUnixToDate(weatherResult.getDt()));
                         pressure.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getPressure())).append(" hPa").toString());

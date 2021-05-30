@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/MaterialSearchBarLight"
-        app:mt_hint="City Name"
+        app:mt_hint="Nazwa miasta"
         app:mt_speechMode="false">
     </com.mancj.materialsearchbar.MaterialSearchBar>
 
@@ -36,7 +36,7 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:text="Weather in London, GB">
+                android:text="Pogoda w Londynie, GB">
             </TextView>
 
             <LinearLayout
@@ -72,7 +72,7 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:text="Weather in London, GB">
+                android:text="Pogoda w Londynie, GB">
             </TextView>
 
             <TextView
@@ -83,7 +83,7 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:text="Weather in London, GB">
+                android:text="30.05.2021">
             </TextView>
 
             <TableLayout
@@ -92,7 +92,7 @@
                 android:background="@drawable/border"
                 android:layout_marginTop="10dp"
                 android:stretchColumns="*"
-                android:padding="16dp">
+                android:padding="10dp">
 
                 <TableRow
                     android:layout_width="wrap_content"
@@ -102,7 +102,7 @@
                         android:background="@drawable/cell"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wind">
+                        android:text="Wiatr">
                     </TextView>
 
                     <TextView
@@ -111,7 +111,7 @@
                         android:layout_column="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Speed: 1 Deg: 1">
+                        android:text="Prędkość: 1 Deg: 1">
                     </TextView>
 
                 </TableRow>
@@ -124,7 +124,7 @@
                         android:background="@drawable/cell"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pressure">
+                        android:text="Ciśnienie">
                     </TextView>
 
                     <TextView
@@ -146,7 +146,7 @@
                         android:background="@drawable/cell"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Humidity">
+                        android:text="Wilgotność">
                     </TextView>
 
                     <TextView
@@ -168,7 +168,7 @@
                         android:background="@drawable/cell"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sunrise">
+                        android:text="Wschód słońca">
                     </TextView>
 
                     <TextView
@@ -190,7 +190,7 @@
                         android:background="@drawable/cell"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sunset">
+                        android:text="Zachód słońca">
                     </TextView>
 
                     <TextView
@@ -212,7 +212,7 @@
                         android:background="@drawable/cell"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Geo coords">
+                        android:text="Współrzędne">
                     </TextView>
 
                     <TextView

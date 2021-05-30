@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="10dp"
     tools:context=".ForecastFragment">
 
     <LinearLayout
@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5 DAYS WEATHER FORECAST"
+            android:text="Prognoza na 5 dni"
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"></TextView>
@@ -26,7 +26,7 @@
             android:id="@+id/city_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Weather in London,GB"
+            android:text="Pogoda w Londynie,GB"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"></TextView>

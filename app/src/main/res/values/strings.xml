@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">Weather</string>
+    <string name="app_name">Pogoda</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_fragment">Today Weather</string>
+    <string name="hello_fragment">Pogoda na dziś</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank">5 days weather forecast</string>
+    <string name="hello_blank">Prognoza pogody na 5 dni</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Prognoza dla konkretnego miasta</string>
+
+    <string name="today">Today</string>
 </resources>

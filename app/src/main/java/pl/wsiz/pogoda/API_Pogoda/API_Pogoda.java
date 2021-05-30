@@ -12,7 +12,7 @@ public class API_Pogoda {
 
     public static String convertUnixToDate(long dt) {
         Date date = new Date(dt*1000L);
-        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm dd EEE MM yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm dd.MM.yyyy (EEE)");
         String formatted = sdf.format(date);
         return formatted;
     }
